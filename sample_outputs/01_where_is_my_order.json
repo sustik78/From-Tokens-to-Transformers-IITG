@@ -1,0 +1,123 @@
+{
+  "input_audio": "test_audio\\01_where_is_my_order.wav",
+  "heard": "hello my order has not arrived yet where is it",
+  "reply": "I'm ZentroMart's AI assistant. Could you share your order ID so I can check where it is?",
+  "reply_audio": "sample_outputs\\01_where_is_my_order_reply.wav",
+  "stt_language": "en-IN",
+  "tts_language": "en-IN",
+  "decision": "clarify",
+  "intent": "where_is_my_order",
+  "language": "en",
+  "order_id": null,
+  "verified": false,
+  "tool_calls": [],
+  "retrieved": [
+    {
+      "chunk_id": "REF-6",
+      "source": "pol_refunds.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.833262,
+      "section_title": "Refund reference number"
+    },
+    {
+      "chunk_id": "CAN-1",
+      "source": "pol_cancellations.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.824068,
+      "section_title": "Before the order ships"
+    },
+    {
+      "chunk_id": "CAN-3",
+      "source": "pol_cancellations.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.761404,
+      "section_title": "Grocery delivery slots"
+    },
+    {
+      "chunk_id": "DEL-5",
+      "source": "pol_delivery_shipping.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.757147,
+      "section_title": "Where we deliver"
+    },
+    {
+      "chunk_id": "TRK-2",
+      "source": "help_track_order.md",
+      "doc_type": "help",
+      "status": "current",
+      "score": 0.745279,
+      "section_title": "Delivered but not received"
+    },
+    {
+      "chunk_id": "PAY-2",
+      "source": "pol_payments_cod.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.61913,
+      "section_title": "Cash on delivery"
+    },
+    {
+      "chunk_id": "DEL-4",
+      "source": "pol_delivery_shipping.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.593193,
+      "section_title": "Late deliveries"
+    },
+    {
+      "chunk_id": "TRK-1",
+      "source": "help_track_order.md",
+      "doc_type": "help",
+      "status": "current",
+      "score": 0.590611,
+      "section_title": "Order statuses"
+    },
+    {
+      "chunk_id": "STY-1",
+      "source": "agent_conversation_style.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "Opening"
+    },
+    {
+      "chunk_id": "IDV-2",
+      "source": "agent_identity_verification.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "How to verify"
+    },
+    {
+      "chunk_id": "IDV-3",
+      "source": "agent_identity_verification.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "If verification fails"
+    },
+    {
+      "chunk_id": "ESC-1",
+      "source": "agent_escalation_handoff.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "When to hand over to a human"
+    },
+    {
+      "chunk_id": "ESC-2",
+      "source": "agent_escalation_handoff.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "What to do first"
+    }
+  ],
+  "facts": {
+    "intent": "where_is_my_order"
+  }
+}

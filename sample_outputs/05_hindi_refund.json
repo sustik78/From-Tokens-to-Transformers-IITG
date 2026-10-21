@@ -1,0 +1,30 @@
+{
+  "input_audio": "test_audio\\05_hindi_refund.wav",
+  "heard": "mera refund kahaan hai order number hai chhah hazaar chhah sau unchas do hazaar chaar sau pachahattar",
+  "reply": "Thanks. Privacy ke liye, kripya apne registered phone number ke last four digits ya apna delivery pincode batayein.",
+  "reply_audio": "sample_outputs\\05_hindi_refund_reply.wav",
+  "stt_language": "en-IN",
+  "tts_language": "hi-IN",
+  "decision": "clarify",
+  "intent": "verification",
+  "language": "hi-en",
+  "order_id": "66492475",
+  "verified": false,
+  "tool_calls": [
+    {
+      "name": "lookup_order",
+      "args": {
+        "order_id": "66492475"
+      },
+      "result": {
+        "verification_required": true,
+        "verified": false,
+        "found": false,
+        "message": "Ask for the registered phone last 4 digits OR delivery pincode."
+      },
+      "ok": true
+    }
+  ],
+  "retrieved": [],
+  "facts": {}
+}

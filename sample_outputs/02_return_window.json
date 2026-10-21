@@ -1,0 +1,125 @@
+{
+  "input_audio": "test_audio\\02_return_window.wav",
+  "heard": "what is the return window for a fashion item delivered on fifth october twenty twenty six",
+  "reply": "I'm ZentroMart's AI assistant. Fashion items have 15 calendar days from delivery. Orders placed in the 1-15 October festive sale get 30 days instead.",
+  "reply_audio": "sample_outputs\\02_return_window_reply.wav",
+  "stt_language": "en-IN",
+  "tts_language": "en-IN",
+  "decision": "answer",
+  "intent": "return_window",
+  "language": "en",
+  "order_id": null,
+  "verified": false,
+  "tool_calls": [],
+  "retrieved": [
+    {
+      "chunk_id": "RET-3",
+      "source": "pol_returns_v4.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.845288,
+      "section_title": "Change to electronics returns"
+    },
+    {
+      "chunk_id": "RET-2",
+      "source": "pol_returns_v4.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.819761,
+      "section_title": "Return windows by category"
+    },
+    {
+      "chunk_id": "RET-9",
+      "source": "pol_returns_v4.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.783563,
+      "section_title": "Exchanges"
+    },
+    {
+      "chunk_id": "RET-8",
+      "source": "pol_returns_v4.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.750886,
+      "section_title": "Festive sale returns"
+    },
+    {
+      "chunk_id": "KB-00.2",
+      "source": "00_about_this_knowledge_base.md",
+      "doc_type": "meta",
+      "status": "current",
+      "score": 0.738344,
+      "section_title": "Today's date"
+    },
+    {
+      "chunk_id": "CAN-2",
+      "source": "pol_cancellations.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.721138,
+      "section_title": "After the order ships"
+    },
+    {
+      "chunk_id": "RET-6",
+      "source": "pol_returns_v4.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.699868,
+      "section_title": "Reverse pickup and fees"
+    },
+    {
+      "chunk_id": "REF-1",
+      "source": "pol_refunds.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.659893,
+      "section_title": "When a refund is initiated"
+    },
+    {
+      "chunk_id": "STY-1",
+      "source": "agent_conversation_style.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "Opening"
+    },
+    {
+      "chunk_id": "IDV-2",
+      "source": "agent_identity_verification.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "How to verify"
+    },
+    {
+      "chunk_id": "IDV-3",
+      "source": "agent_identity_verification.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "If verification fails"
+    },
+    {
+      "chunk_id": "ESC-1",
+      "source": "agent_escalation_handoff.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "When to hand over to a human"
+    },
+    {
+      "chunk_id": "ESC-2",
+      "source": "agent_escalation_handoff.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "What to do first"
+    }
+  ],
+  "facts": {
+    "intent": "return_window",
+    "category": "fashion",
+    "window": 15
+  }
+}

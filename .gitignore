@@ -1,0 +1,61 @@
+# ==============================================================================
+# VoiceOps 2026 · Git Ignore Rules
+# ==============================================================================
+
+# --- Secrets & Environment Configurations ---
+# NEVER commit secret keys, credentials, or environment files!
+.env
+.env.*
+.env*.local
+*.key
+*.pem
+*.cert
+*.crt
+*.token
+credentials.json
+client_secret*.json
+
+# Always track the example template
+!.env.example
+
+# --- Python & Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Competition Datasets (Never commit raw dataset copies) ---
+Capstone_Project_Dataset_FTTT_2026/
+data/
+kb/
+practice/
+tools/
+!src/tools_wrapper.py
+
+# --- Generated Audio & Caching Artifacts ---
+test_audio/
+.index_cache/
+vector_index/
+tools/tickets_created.csv
+
+# --- Submission Archives & Temporary Packages ---
+voiceops_*_submission.zip
+*.zip
+*.tar.gz
+*.rar
+
+# --- Logs & Operating System Files ---
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

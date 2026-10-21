@@ -1,0 +1,123 @@
+{
+  "input_audio": "test_audio\\04_cancel_shipped.wav",
+  "heard": "my order is already on its way can i cancel it now",
+  "reply": "I'm ZentroMart's AI assistant. A shipped order can't be cancelled. You can refuse the parcel at the door, or accept it and return it within its return window. For a prepaid order, the refund follows once the parcel reaches the warehouse, usually 7 to 10 calendar days after the last delivery attempt.",
+  "reply_audio": "sample_outputs\\04_cancel_shipped_reply.wav",
+  "stt_language": "en-IN",
+  "tts_language": "en-IN",
+  "decision": "answer",
+  "intent": "cancel_shipped",
+  "language": "en",
+  "order_id": null,
+  "verified": false,
+  "tool_calls": [],
+  "retrieved": [
+    {
+      "chunk_id": "CAN-1",
+      "source": "pol_cancellations.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 1.01445,
+      "section_title": "Before the order ships"
+    },
+    {
+      "chunk_id": "CAN-2",
+      "source": "pol_cancellations.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.736731,
+      "section_title": "After the order ships"
+    },
+    {
+      "chunk_id": "CAN-3",
+      "source": "pol_cancellations.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.729973,
+      "section_title": "Grocery delivery slots"
+    },
+    {
+      "chunk_id": "CAN-4",
+      "source": "pol_cancellations.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.60562,
+      "section_title": "Partial cancellation"
+    },
+    {
+      "chunk_id": "PAY-4",
+      "source": "pol_payments_cod.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.562893,
+      "section_title": "ZentroMart Wallet"
+    },
+    {
+      "chunk_id": "REF-4",
+      "source": "pol_refunds.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.545457,
+      "section_title": "Partial refunds and coupons"
+    },
+    {
+      "chunk_id": "CPN-2",
+      "source": "pol_coupons_offers.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.523093,
+      "section_title": "Expired or failed coupons"
+    },
+    {
+      "chunk_id": "DEL-4",
+      "source": "pol_delivery_shipping.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.509601,
+      "section_title": "Late deliveries"
+    },
+    {
+      "chunk_id": "STY-1",
+      "source": "agent_conversation_style.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "Opening"
+    },
+    {
+      "chunk_id": "IDV-2",
+      "source": "agent_identity_verification.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "How to verify"
+    },
+    {
+      "chunk_id": "IDV-3",
+      "source": "agent_identity_verification.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "If verification fails"
+    },
+    {
+      "chunk_id": "ESC-1",
+      "source": "agent_escalation_handoff.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "When to hand over to a human"
+    },
+    {
+      "chunk_id": "ESC-2",
+      "source": "agent_escalation_handoff.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "What to do first"
+    }
+  ],
+  "facts": {
+    "intent": "cancel_shipped"
+  }
+}

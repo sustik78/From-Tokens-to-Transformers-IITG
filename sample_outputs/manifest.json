@@ -1,0 +1,104 @@
+{
+  "audio_dir": "test_audio",
+  "out_dir": "sample_outputs",
+  "stt_language": "en-IN",
+  "files": [
+    {
+      "input": "test_audio\\01_where_is_my_order.wav",
+      "heard": "hello my order has not arrived yet where is it",
+      "reply": "I'm ZentroMart's AI assistant. Could you share your order ID so I can check where it is?",
+      "json": "sample_outputs\\01_where_is_my_order.json",
+      "audio": "sample_outputs\\01_where_is_my_order_reply.wav",
+      "chunks": [
+        "REF-6",
+        "CAN-1",
+        "CAN-3",
+        "DEL-5",
+        "TRK-2",
+        "PAY-2",
+        "DEL-4",
+        "TRK-1",
+        "STY-1",
+        "IDV-2",
+        "IDV-3",
+        "ESC-1",
+        "ESC-2"
+      ]
+    },
+    {
+      "input": "test_audio\\02_return_window.wav",
+      "heard": "what is the return window for a fashion item delivered on fifth october twenty twenty six",
+      "reply": "I'm ZentroMart's AI assistant. Fashion items have 15 calendar days from delivery. Orders placed in the 1-15 October festive sale get 30 days instead.",
+      "json": "sample_outputs\\02_return_window.json",
+      "audio": "sample_outputs\\02_return_window_reply.wav",
+      "chunks": [
+        "RET-3",
+        "RET-2",
+        "RET-9",
+        "RET-8",
+        "KB-00.2",
+        "CAN-2",
+        "RET-6",
+        "REF-1",
+        "STY-1",
+        "IDV-2",
+        "IDV-3",
+        "ESC-1",
+        "ESC-2"
+      ]
+    },
+    {
+      "input": "test_audio\\03_refund_timeline.wav",
+      "heard": "how long does a upi refund take",
+      "reply": "I'm ZentroMart's AI assistant. Refunds to UPI take 1 to 3 business days after the refund is initiated.",
+      "json": "sample_outputs\\03_refund_timeline.json",
+      "audio": "sample_outputs\\03_refund_timeline_reply.wav",
+      "chunks": [
+        "REF-2",
+        "FAQ-1",
+        "REF-3",
+        "RET-7",
+        "REF-6",
+        "PLS-2",
+        "REF-1",
+        "REF-4",
+        "STY-1",
+        "IDV-2",
+        "IDV-3",
+        "ESC-1",
+        "ESC-2"
+      ]
+    },
+    {
+      "input": "test_audio\\04_cancel_shipped.wav",
+      "heard": "my order is already on its way can i cancel it now",
+      "reply": "I'm ZentroMart's AI assistant. A shipped order can't be cancelled. You can refuse the parcel at the door, or accept it and return it within its return window. For a prepaid order, the refund follows once the parcel reaches the warehouse, usually 7 to 10 calendar days after the last delivery attempt.",
+      "json": "sample_outputs\\04_cancel_shipped.json",
+      "audio": "sample_outputs\\04_cancel_shipped_reply.wav",
+      "chunks": [
+        "CAN-1",
+        "CAN-2",
+        "CAN-3",
+        "CAN-4",
+        "PAY-4",
+        "REF-4",
+        "CPN-2",
+        "DEL-4",
+        "STY-1",
+        "IDV-2",
+        "IDV-3",
+        "ESC-1",
+        "ESC-2"
+      ]
+    },
+    {
+      "input": "test_audio\\05_hindi_refund.wav",
+      "heard": "mera refund kahaan hai order number hai chhah hazaar chhah sau unchas do hazaar chaar sau pachahattar",
+      "reply": "Thanks. Privacy ke liye, kripya apne registered phone number ke last four digits ya apna delivery pincode batayein.",
+      "json": "sample_outputs\\05_hindi_refund.json",
+      "audio": "sample_outputs\\05_hindi_refund_reply.wav",
+      "chunks": []
+    }
+  ],
+  "errors": []
+}

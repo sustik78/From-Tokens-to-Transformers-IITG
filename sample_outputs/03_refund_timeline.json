@@ -1,0 +1,126 @@
+{
+  "input_audio": "test_audio\\03_refund_timeline.wav",
+  "heard": "how long does a upi refund take",
+  "reply": "I'm ZentroMart's AI assistant. Refunds to UPI take 1 to 3 business days after the refund is initiated.",
+  "reply_audio": "sample_outputs\\03_refund_timeline_reply.wav",
+  "stt_language": "en-IN",
+  "tts_language": "en-IN",
+  "decision": "answer",
+  "intent": "refund_timeline",
+  "language": "en",
+  "order_id": null,
+  "verified": false,
+  "tool_calls": [],
+  "retrieved": [
+    {
+      "chunk_id": "REF-2",
+      "source": "pol_refunds.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.959462,
+      "section_title": "How long refunds take after initiation"
+    },
+    {
+      "chunk_id": "FAQ-1",
+      "source": "faq_general.md",
+      "doc_type": "faq",
+      "status": "current",
+      "score": 0.745838,
+      "section_title": "How long do refunds take?"
+    },
+    {
+      "chunk_id": "REF-3",
+      "source": "pol_refunds.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.586014,
+      "section_title": "Cash-on-delivery refunds"
+    },
+    {
+      "chunk_id": "RET-7",
+      "source": "pol_returns_v4.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.576796,
+      "section_title": "After pickup"
+    },
+    {
+      "chunk_id": "REF-6",
+      "source": "pol_refunds.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.569863,
+      "section_title": "Refund reference number"
+    },
+    {
+      "chunk_id": "PLS-2",
+      "source": "pol_plus_membership.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.529898,
+      "section_title": "Benefits"
+    },
+    {
+      "chunk_id": "REF-1",
+      "source": "pol_refunds.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.513697,
+      "section_title": "When a refund is initiated"
+    },
+    {
+      "chunk_id": "REF-4",
+      "source": "pol_refunds.md",
+      "doc_type": "policy",
+      "status": "current",
+      "score": 0.511025,
+      "section_title": "Partial refunds and coupons"
+    },
+    {
+      "chunk_id": "STY-1",
+      "source": "agent_conversation_style.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "Opening"
+    },
+    {
+      "chunk_id": "IDV-2",
+      "source": "agent_identity_verification.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "How to verify"
+    },
+    {
+      "chunk_id": "IDV-3",
+      "source": "agent_identity_verification.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "If verification fails"
+    },
+    {
+      "chunk_id": "ESC-1",
+      "source": "agent_escalation_handoff.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "When to hand over to a human"
+    },
+    {
+      "chunk_id": "ESC-2",
+      "source": "agent_escalation_handoff.md",
+      "doc_type": "agent_guide",
+      "status": "current",
+      "score": 0.0,
+      "section_title": "What to do first"
+    }
+  ],
+  "facts": {
+    "intent": "refund_timeline",
+    "payment_method": "upi",
+    "min_days": 1,
+    "max_days": 3
+  }
+}

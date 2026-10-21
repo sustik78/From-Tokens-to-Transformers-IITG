@@ -1,0 +1,11 @@
+gnani-vachana==0.8.1
+pandas>=2.0
+numpy>=1.26
+rank-bm25>=0.2.2
+sentence-transformers>=3.0
+streamlit>=1.40
+soundfile>=0.12
+librosa>=0.10
+python-dotenv>=1.0
+requests>=2.31
+reportlab>=4.0

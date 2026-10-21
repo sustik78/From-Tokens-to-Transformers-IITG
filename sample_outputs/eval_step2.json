@@ -1,0 +1,6160 @@
+{
+  "summary": {
+    "step": 2,
+    "questions": 52,
+    "top_k": 8,
+    "reply_ok": 49,
+    "reply_total": 49,
+    "reply_rate": 1.0,
+    "retrieval_hit": 47,
+    "retrieval_total": 47,
+    "retrieval_hit_rate": 1.0,
+    "decision_ok": 52,
+    "decision_total": 52,
+    "decision_rate": 1.0,
+    "joint_ok": 52,
+    "joint_rate": 1.0
+  },
+  "rows": [
+    {
+      "id": "PQ0002",
+      "question": "so sku ele-zero zero one to pe zentromart assured hai kya claim kaise karein",
+      "reply": "Haan. Kestrel K7 Smartphone 128 GB, Beige par 12 mahine ki ZentroMart Assured warranty hai aur 12 mahine ki brand warranty bhi hai. Claim app mein My Orders se karein.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "warranty",
+      "must_include": "12 ; My Orders / app",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "WAR-2 ; products.csv:ELE-0012",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0012",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.886626,
+          "section_title": "Kestrel K7 Smartphone 128 GB, Beige"
+        },
+        {
+          "chunk_id": "WAR-3",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.690481,
+          "section_title": "What warranty does not cover"
+        },
+        {
+          "chunk_id": "WAR-1",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.615002,
+          "section_title": "Brand warranty"
+        },
+        {
+          "chunk_id": "DEL-5",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.604073,
+          "section_title": "Where we deliver"
+        },
+        {
+          "chunk_id": "WAR-2",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.593073,
+          "section_title": "ZentroMart Assured"
+        },
+        {
+          "chunk_id": "DEL-2",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.573763,
+          "section_title": "Delivery fees"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.567744,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.561692,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0003",
+      "question": "how fast are refunds to the zentromart wallet",
+      "reply": "Refunds to the ZentroMart Wallet are instant, within 2 hours of initiation.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "instant / 2 hours / two hours / तुरंत / turant",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.1",
+      "retrieved": [
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 1.077073,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "REF-3",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.88991,
+          "section_title": "Cash-on-delivery refunds"
+        },
+        {
+          "chunk_id": "PAY-4",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.810279,
+          "section_title": "ZentroMart Wallet"
+        },
+        {
+          "chunk_id": "MKS-2",
+          "source": "pol_marketplace_sellers.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.69212,
+          "section_title": "Returns and refunds"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.671752,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.630353,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "FAQ-1",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.6223,
+          "section_title": "How long do refunds take?"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.589172,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0004",
+      "question": "uh can i schedule a delivery at midnight",
+      "reply": "Sorry, I don't have information about that. I can connect you to a human colleague who can help.",
+      "decision": "answer",
+      "expected_decision": "answer ; escalate",
+      "decision_ok": true,
+      "intent": "unsupported",
+      "must_include": "don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी",
+      "reply_ok": true,
+      "retrieval_hit": null,
+      "gold_evidence": "",
+      "retrieved": [
+        {
+          "chunk_id": "CAN-2",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.724272,
+          "section_title": "After the order ships"
+        },
+        {
+          "chunk_id": "DEL-1",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.708413,
+          "section_title": "Delivery times"
+        },
+        {
+          "chunk_id": "CAN-3",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.666133,
+          "section_title": "Grocery delivery slots"
+        },
+        {
+          "chunk_id": "DEL-6",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.637809,
+          "section_title": "Changing the address"
+        },
+        {
+          "chunk_id": "FAQ-2",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.63028,
+          "section_title": "Can I return something I bought?"
+        },
+        {
+          "chunk_id": "DEL-2",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.571969,
+          "section_title": "Delivery fees"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.568274,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "FAQ-4",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.566774,
+          "section_title": "Can I talk to a person?"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0005",
+      "question": "uh sku ele-zero zero zero to pe zentromart assured hai kya claim kaise karein",
+      "reply": "Haan. Nimbus X2 Wireless Earbuds, Black par 12 mahine ki ZentroMart Assured warranty hai aur 12 mahine ki brand warranty bhi hai. Claim app mein My Orders se karein.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "warranty",
+      "must_include": "12 ; My Orders / app",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "WAR-2 ; products.csv:ELE-0002",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0002",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.851552,
+          "section_title": "Nimbus X2 Wireless Earbuds, Black"
+        },
+        {
+          "chunk_id": "WAR-3",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.681829,
+          "section_title": "What warranty does not cover"
+        },
+        {
+          "chunk_id": "WAR-1",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.611673,
+          "section_title": "Brand warranty"
+        },
+        {
+          "chunk_id": "WAR-2",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.593362,
+          "section_title": "ZentroMart Assured"
+        },
+        {
+          "chunk_id": "DEL-2",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.569292,
+          "section_title": "Delivery fees"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.561555,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.556161,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "ESC-3",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.554248,
+          "section_title": "Handover summary"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0006",
+      "question": "uh as a zentromart plus member will i be charged the pickup fee for returning shoes i just dont like",
+      "reply": "No. ZentroMart Plus members pay no reverse pickup fee, so a change-of-mind return is free.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_fee",
+      "must_include": "no / not / waived / free",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-6 ; PLS-2",
+      "retrieved": [
+        {
+          "chunk_id": "RET-6",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.763256,
+          "section_title": "Reverse pickup and fees"
+        },
+        {
+          "chunk_id": "PLS-2",
+          "source": "pol_plus_membership.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.702795,
+          "section_title": "Benefits"
+        },
+        {
+          "chunk_id": "FAQ-2",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.664585,
+          "section_title": "Can I return something I bought?"
+        },
+        {
+          "chunk_id": "PLS-3",
+          "source": "pol_plus_membership.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.58096,
+          "section_title": "Cancelling membership"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.571544,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "PLS-1",
+          "source": "pol_plus_membership.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.56105,
+          "section_title": "Price"
+        },
+        {
+          "chunk_id": "DEL-4",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.551735,
+          "section_title": "Late deliveries"
+        },
+        {
+          "chunk_id": "DEL-2",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.539899,
+          "section_title": "Delivery fees"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0008",
+      "question": "so credit card wala refund 17 october two zero two six ko shuru hua kab tak aa jaana chahiye",
+      "reply": "credit or debit card refund initiation ke baad 5 se 7 business days leta hai. 17 October 2026 ko shuru hue refund ke liye yeh 24 October 2026 se 27 October 2026 ke beech aana chahiye.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "2026-10-27 / 27 October 2026 / 27 अक्टूबर 2026",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.3",
+      "retrieved": [
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.94513,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.877665,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.848524,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.815496,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.783135,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "KB-00.2",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.751741,
+          "section_title": "Today's date"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.65794,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "DGT-0069",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.62437,
+          "section_title": "ZentroMart Gift Card ₹500"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0009",
+      "question": "uh is there a student discount",
+      "reply": "Sorry, I don't have information about that. I can connect you to a human colleague who can help.",
+      "decision": "answer",
+      "expected_decision": "answer ; escalate",
+      "decision_ok": true,
+      "intent": "unsupported",
+      "must_include": "don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी",
+      "reply_ok": true,
+      "retrieval_hit": null,
+      "gold_evidence": "",
+      "retrieved": [
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.84787,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "DEL-4",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.632529,
+          "section_title": "Late deliveries"
+        },
+        {
+          "chunk_id": "PAY-4",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.630895,
+          "section_title": "ZentroMart Wallet"
+        },
+        {
+          "chunk_id": "PAY-2",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.47827,
+          "section_title": "Cash on delivery"
+        },
+        {
+          "chunk_id": "RET-9",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.469637,
+          "section_title": "Exchanges"
+        },
+        {
+          "chunk_id": "CPN-1",
+          "source": "pol_coupons_offers.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.467738,
+          "section_title": "One coupon per order"
+        },
+        {
+          "chunk_id": "DEL-2",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.464621,
+          "section_title": "Delivery fees"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.429256,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0010",
+      "question": "is the free if the urbanthread slim fit jeans came torn",
+      "reply": "Please report it within 48 hours of delivery with photos of the item and the packaging. After verification you get a free replacement or a full refund, including delivery fees, and no reverse pickup fee applies.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "damaged_item",
+      "must_include": "free / no fee / waived / no charge",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-6 ; DWM-2",
+      "retrieved": [
+        {
+          "chunk_id": "FSH-0029",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.85736,
+          "section_title": "UrbanThread Slim Fit Jeans, Blue"
+        },
+        {
+          "chunk_id": "FSH-0030",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.849458,
+          "section_title": "UrbanThread Slim Fit Jeans, Maroon"
+        },
+        {
+          "chunk_id": "DWM-2",
+          "source": "pol_damaged_wrong_missing.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.640906,
+          "section_title": "Resolution"
+        },
+        {
+          "chunk_id": "DEL-4",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.575709,
+          "section_title": "Late deliveries"
+        },
+        {
+          "chunk_id": "DEL-2",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.518208,
+          "section_title": "Delivery fees"
+        },
+        {
+          "chunk_id": "PLS-2",
+          "source": "pol_plus_membership.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.510641,
+          "section_title": "Benefits"
+        },
+        {
+          "chunk_id": "DWM-4",
+          "source": "pol_damaged_wrong_missing.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.485289,
+          "section_title": "Reported after 48 hours"
+        },
+        {
+          "chunk_id": "FSH-0031",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.462403,
+          "section_title": "UrbanThread Oversized Hoodie, White"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0013",
+      "question": "मैंने Gulmohar Matte Lipstick खोल लिया है क्या अब भी वापस कर सकती हूँ",
+      "reply": "ब्यूटी प्रोडक्ट सिर्फ़ बिना खोले, सील के साथ ही वापस होते हैं, इसलिए खोले गए Gulmohar Matte Lipstick को वापस नहीं किया जा सकता।",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_eligibility",
+      "must_include": "सील / seal / बंद / खुला",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-4",
+      "retrieved": [
+        {
+          "chunk_id": "BTY-0052",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.85262,
+          "section_title": "Gulmohar Matte Lipstick"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.704435,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "RET-3",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.565262,
+          "section_title": "Change to electronics returns"
+        },
+        {
+          "chunk_id": "RET-4",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.562909,
+          "section_title": "Condition of returned items"
+        },
+        {
+          "chunk_id": "RET-9",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.558643,
+          "section_title": "Exchanges"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.534123,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "BTY-0053",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.527571,
+          "section_title": "Gulmohar Vitamin C Face Serum 30 ml"
+        },
+        {
+          "chunk_id": "CAN-2",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.504522,
+          "section_title": "After the order ships"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0014",
+      "question": "मुझे Pagecraft A5 Ruled Notebook Pack of 4 लौटाने के कितने दिन मिलेंगे",
+      "reply": "Pagecraft A5 Ruled Notebook (Pack of 4) डिलीवरी के 10 दिन के अंदर वापस किया जा सकता है।",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "10",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-2 ; products.csv:BKS-0056",
+      "retrieved": [
+        {
+          "chunk_id": "BKS-0056",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.854831,
+          "section_title": "Pagecraft A5 Ruled Notebook (Pack of 4)"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.473142,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "BKS-0058",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.46824,
+          "section_title": "Pagecraft Guide: Learn Python in 30 Days"
+        },
+        {
+          "chunk_id": "RET-3",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.457218,
+          "section_title": "Change to electronics returns"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.445071,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.423214,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "RET-4",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.411427,
+          "section_title": "Condition of returned items"
+        },
+        {
+          "chunk_id": "BKS-0057",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.407404,
+          "section_title": "Pagecraft Novel: The Monsoon Ledger"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0015",
+      "question": "bulk order gst invoice milega kya",
+      "reply": "Maaf kijiye, mere paas iske baare mein jaankari nahi hai. Main aapko ek colleague se connect kar sakti hoon.",
+      "decision": "answer",
+      "expected_decision": "answer ; escalate",
+      "decision_ok": true,
+      "intent": "unsupported",
+      "must_include": "don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी",
+      "reply_ok": true,
+      "retrieval_hit": null,
+      "gold_evidence": "",
+      "retrieved": [
+        {
+          "chunk_id": "DEL-4",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.814489,
+          "section_title": "Late deliveries"
+        },
+        {
+          "chunk_id": "ESC-3",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.733057,
+          "section_title": "Handover summary"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.664686,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "TRK-1",
+          "source": "help_track_order.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.632544,
+          "section_title": "Order statuses"
+        },
+        {
+          "chunk_id": "CPN-1",
+          "source": "pol_coupons_offers.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.616181,
+          "section_title": "One coupon per order"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.615989,
+          "section_title": "What to do first"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.614541,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "CAN-2",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.586696,
+          "section_title": "After the order ships"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        }
+      ]
+    },
+    {
+      "id": "PQ0016",
+      "question": "i opened the neelam eau de parfum 50 ml and tried it once can i still return it",
+      "reply": "Beauty products can be returned only if unopened with the seal intact, so this Neelam Eau de Parfum 50 ml can't be returned once opened.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_eligibility",
+      "must_include": "unopened / seal / sealed",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-4 ; RET-2",
+      "retrieved": [
+        {
+          "chunk_id": "BTY-0055",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.822079,
+          "section_title": "Neelam Eau de Parfum 50 ml"
+        },
+        {
+          "chunk_id": "BTY-0054",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.476227,
+          "section_title": "Neelam Herbal Face Wash 150 ml"
+        },
+        {
+          "chunk_id": "RET-4",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.461865,
+          "section_title": "Condition of returned items"
+        },
+        {
+          "chunk_id": "PAY-4",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.43821,
+          "section_title": "ZentroMart Wallet"
+        },
+        {
+          "chunk_id": "FAQ-2",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.430237,
+          "section_title": "Can I return something I bought?"
+        },
+        {
+          "chunk_id": "RET-6",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.419906,
+          "section_title": "Reverse pickup and fees"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.406802,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.40093,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0018",
+      "question": "कितने दिन में वापस करना होगा",
+      "reply": "कौन सा सामान है? रिटर्न विंडो श्रेणी पर निर्भर करती है।",
+      "decision": "clarify",
+      "expected_decision": "clarify",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "",
+      "reply_ok": null,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-2",
+      "retrieved": [
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 1.096814,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "RET-3",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.912542,
+          "section_title": "Change to electronics returns"
+        },
+        {
+          "chunk_id": "RET-9",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.716493,
+          "section_title": "Exchanges"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.709579,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.677089,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "DWM-4",
+          "source": "pol_damaged_wrong_missing.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.655047,
+          "section_title": "Reported after 48 hours"
+        },
+        {
+          "chunk_id": "RETv3-2",
+          "source": "pol_returns_v3_superseded.md",
+          "doc_type": "policy",
+          "status": "superseded",
+          "score": 0.633529,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "BKS-0058",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.60618,
+          "section_title": "Pagecraft Guide: Learn Python in 30 Days"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0019",
+      "question": "my orbix fit 3 pro smartwatch was delivered on 20 july what was the return window for it",
+      "reply": "Orbix Fit 3 Pro Smartwatch, Blue can be returned within 10 days of delivery. The deadline is 30 July 2026.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "10",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-3 ; RETv3-2",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0017",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.891276,
+          "section_title": "Orbix Fit 3 Pro Smartwatch, Blue"
+        },
+        {
+          "chunk_id": "ELE-0016",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.774492,
+          "section_title": "Orbix Fit 3 Smartwatch, Green"
+        },
+        {
+          "chunk_id": "RET-3",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.645962,
+          "section_title": "Change to electronics returns"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.588617,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "RET-6",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.574115,
+          "section_title": "Reverse pickup and fees"
+        },
+        {
+          "chunk_id": "PAY-3",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.535993,
+          "section_title": "Failed payments"
+        },
+        {
+          "chunk_id": "ELE-0024",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.535522,
+          "section_title": "Orbix USB-C Cable 1.5 m, Grey"
+        },
+        {
+          "chunk_id": "ELE-0025",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.528494,
+          "section_title": "Orbix USB-C Cable 1.5 m, Maroon"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0020",
+      "question": "मुझे Sootra Canvas Tote Bag लौटाने के लिए कितने दिन मिलेंगे",
+      "reply": "Sootra Canvas Tote Bag, Black डिलीवरी के 15 दिन के अंदर वापस किया जा सकता है। इस चेंज-ऑफ-माइंड रिटर्न पर ₹49 रिवर्स पिकअप फ़ीस लगेगी।",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "15",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-2 ; RET-8 ; products.csv:FSH-0038",
+      "retrieved": [
+        {
+          "chunk_id": "FSH-0038",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.837852,
+          "section_title": "Sootra Canvas Tote Bag, Green"
+        },
+        {
+          "chunk_id": "FSH-0037",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.83776,
+          "section_title": "Sootra Canvas Tote Bag, Black"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.457258,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.456368,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.445766,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "RET-3",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.436588,
+          "section_title": "Change to electronics returns"
+        },
+        {
+          "chunk_id": "FSH-0039",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.422182,
+          "section_title": "Sootra Leather Backpack, Grey"
+        },
+        {
+          "chunk_id": "FSH-0036",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.401226,
+          "section_title": "Sootra Linen Shirt, Maroon"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0021",
+      "question": "what happens if im not home when the courier comes",
+      "reply": "The courier makes up to 3 delivery attempts. After a failed attempt you get an SMS to reschedule, and after the third failed attempt the parcel returns to the warehouse.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "delivery_attempts",
+      "must_include": "3",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "DEL-3",
+      "retrieved": [
+        {
+          "chunk_id": "DEL-3",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.866006,
+          "section_title": "Delivery attempts"
+        },
+        {
+          "chunk_id": "TRK-1",
+          "source": "help_track_order.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.82178,
+          "section_title": "Order statuses"
+        },
+        {
+          "chunk_id": "ESC-3",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.620464,
+          "section_title": "Handover summary"
+        },
+        {
+          "chunk_id": "WAR-3",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.611026,
+          "section_title": "What warranty does not cover"
+        },
+        {
+          "chunk_id": "DEL-4",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.569667,
+          "section_title": "Late deliveries"
+        },
+        {
+          "chunk_id": "TRK-2",
+          "source": "help_track_order.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.560769,
+          "section_title": "Delivered but not received"
+        },
+        {
+          "chunk_id": "DEL-1",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.558576,
+          "section_title": "Delivery times"
+        },
+        {
+          "chunk_id": "PAY-3",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.533379,
+          "section_title": "Failed payments"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0022",
+      "question": "my refund to credit card was started on 17 october two zero two six by which date should i have it",
+      "reply": "Refunds to credit or debit card take 5 to 7 business days after initiation. For a refund started on 17 October 2026, that means between 24 October 2026 and 27 October 2026.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "2026-10-27 / 27 October 2026 / 27 अक्टूबर 2026",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.3",
+      "retrieved": [
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.874846,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.845343,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "KB-00.2",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.788048,
+          "section_title": "Today's date"
+        },
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.721961,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "PAY-4",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.717271,
+          "section_title": "ZentroMart Wallet"
+        },
+        {
+          "chunk_id": "PAY-3",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.701662,
+          "section_title": "Failed payments"
+        },
+        {
+          "chunk_id": "REF-5",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.700368,
+          "section_title": "Delivery and COD fees"
+        },
+        {
+          "chunk_id": "CPN-2",
+          "source": "pol_coupons_offers.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.659389,
+          "section_title": "Expired or failed coupons"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0023",
+      "question": "theres an order on my account that i never placed",
+      "reply": "I've created a ticket and a human colleague will contact you. Your ticket ID is TKT9d711e65aae24bbeadfa07b0240c01a8.",
+      "decision": "escalate",
+      "expected_decision": "escalate",
+      "decision_ok": true,
+      "intent": "fraud",
+      "must_include": "ticket / colleague / human / team / connect / टिकट / सहयोगी",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "ESC-1",
+      "retrieved": [
+        {
+          "chunk_id": "PAY-3",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.860367,
+          "section_title": "Failed payments"
+        },
+        {
+          "chunk_id": "PAY-4",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.848469,
+          "section_title": "ZentroMart Wallet"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.814382,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "CPN-2",
+          "source": "pol_coupons_offers.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.813942,
+          "section_title": "Expired or failed coupons"
+        },
+        {
+          "chunk_id": "ESC-4",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.76901,
+          "section_title": "Things you must never do"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.765251,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "CPN-1",
+          "source": "pol_coupons_offers.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.714311,
+          "section_title": "One coupon per order"
+        },
+        {
+          "chunk_id": "RET-5",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.617483,
+          "section_title": "Items that cannot be returned"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0024",
+      "question": "how long do i get to send back the rangoli cotton straight kurta",
+      "reply": "Rangoli Cotton Straight Kurta, White can be returned within 15 days of delivery. A ₹49 reverse pickup fee applies for this change-of-mind return.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "15",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-2 ; RET-8 ; products.csv:FSH-0026",
+      "retrieved": [
+        {
+          "chunk_id": "FSH-0026",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.851591,
+          "section_title": "Rangoli Cotton Straight Kurta, White"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.51324,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.509282,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "FAQ-1",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.479396,
+          "section_title": "How long do refunds take?"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.472684,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "FSH-0027",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.4509,
+          "section_title": "Rangoli Silk Blend Saree, Grey"
+        },
+        {
+          "chunk_id": "FSH-0028",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.45047,
+          "section_title": "Rangoli Silk Blend Saree, Green"
+        },
+        {
+          "chunk_id": "INR-0065",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.432862,
+          "section_title": "Comfi Cotton Briefs (Pack of 3), Beige"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0025",
+      "question": "if i paid with net banking how soon will the re fund show up",
+      "reply": "Refunds to net banking take 3 to 5 business days after the refund is initiated.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "3 ; 5",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.1",
+      "retrieved": [
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.881896,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.84084,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "PAY-1",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.760478,
+          "section_title": "Payment methods"
+        },
+        {
+          "chunk_id": "RVP-3",
+          "source": "help_reverse_pickup.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.731812,
+          "section_title": "Item rejected at the door"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.638037,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.636567,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "DEL-4",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.588634,
+          "section_title": "Late deliveries"
+        },
+        {
+          "chunk_id": "RVP-1",
+          "source": "help_reverse_pickup.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.580472,
+          "section_title": "Booking"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0026",
+      "question": "what warranty comes with the voltra powercell one zero zero zero zero mah power bank green sku ele-zero zero zero eight",
+      "reply": "Yes. Voltra PowerCell 10000 mAh Power Bank, Green has a 12-month ZentroMart Assured warranty plus the 6-month brand warranty. Claims are raised in the app under My Orders.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "warranty",
+      "must_include": "12",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "WAR-1 ; WAR-2 ; products.csv:ELE-0008",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0008",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.943126,
+          "section_title": "Voltra PowerCell 10000 mAh Power Bank, Green"
+        },
+        {
+          "chunk_id": "ELE-0009",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.731533,
+          "section_title": "Voltra PowerCell 10000 mAh Power Bank, Beige"
+        },
+        {
+          "chunk_id": "ELE-0006",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.67544,
+          "section_title": "Voltra PowerCell 20000 mAh Power Bank, Maroon"
+        },
+        {
+          "chunk_id": "ELE-0007",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.67083,
+          "section_title": "Voltra PowerCell 20000 mAh Power Bank, Beige"
+        },
+        {
+          "chunk_id": "ELE-0010",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.490163,
+          "section_title": "Voltra 65W GaN Fast Charger, Green"
+        },
+        {
+          "chunk_id": "WAR-1",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.489754,
+          "section_title": "Brand warranty"
+        },
+        {
+          "chunk_id": "WAR-3",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.467847,
+          "section_title": "What warranty does not cover"
+        },
+        {
+          "chunk_id": "MKS-3",
+          "source": "pol_marketplace_sellers.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.414436,
+          "section_title": "Warranty"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0027",
+      "question": "uh u p i wala refund 12 october to zero to six ko shuru hua kab tak aa jaana chahiye",
+      "reply": "UPI refund initiation ke baad 1 se 3 business days leta hai. 12 October 2026 ko shuru hue refund ke liye yeh 13 October 2026 se 15 October 2026 ke beech aana chahiye.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "2026-10-15 / 15 October 2026 / 15 अक्टूबर 2026",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.3",
+      "retrieved": [
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.929181,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.853743,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.813233,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.784086,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "KB-00.2",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.755747,
+          "section_title": "Today's date"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.746912,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.653676,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "STY-3",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.617093,
+          "section_title": "Voice replies"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0028",
+      "question": "my re fund to net banking was started on 14 october two zero two six by which date should i have it",
+      "reply": "Refunds to net banking take 3 to 5 business days after initiation. For a refund started on 14 October 2026, that means between 17 October 2026 and 21 October 2026.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "2026-10-21 / 21 October 2026 / 21 अक्टूबर 2026",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.3",
+      "retrieved": [
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.899362,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.848104,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "PAY-1",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.83988,
+          "section_title": "Payment methods"
+        },
+        {
+          "chunk_id": "KB-00.2",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.791278,
+          "section_title": "Today's date"
+        },
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.730104,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "PAY-4",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.719758,
+          "section_title": "ZentroMart Wallet"
+        },
+        {
+          "chunk_id": "REF-5",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.702696,
+          "section_title": "Delivery and COD fees"
+        },
+        {
+          "chunk_id": "PAY-3",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.697837,
+          "section_title": "Failed payments"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0029",
+      "question": "uh credit card wala refund 12 october two zero two six ko shuru hua kab tak aa jaana chahiye",
+      "reply": "credit or debit card refund initiation ke baad 5 se 7 business days leta hai. 12 October 2026 ko shuru hue refund ke liye yeh 17 October 2026 se 21 October 2026 ke beech aana chahiye.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "2026-10-21 / 21 October 2026 / 21 अक्टूबर 2026",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.3",
+      "retrieved": [
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.946528,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.879165,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.850878,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.815762,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.783378,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "KB-00.2",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.750369,
+          "section_title": "Today's date"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.656892,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "DGT-0069",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.624113,
+          "section_title": "ZentroMart Gift Card ₹500"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0030",
+      "question": "the kestrel book 14 laptop sku ele-zero zero to three i received yesterday has a crack i want it sorted",
+      "reply": "I've created a ticket and a human colleague will contact you. Your ticket ID is TKTcd595f494eb74b82ba5c7c322afad6c1.",
+      "decision": "escalate",
+      "expected_decision": "escalate",
+      "decision_ok": true,
+      "intent": "damaged_item",
+      "must_include": "ticket / colleague / team / Priority Resolution",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "DWM-3 ; ESC-1 ; products.csv:ELE-0023",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0023",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.931921,
+          "section_title": "Kestrel Book 14 Laptop, Grey"
+        },
+        {
+          "chunk_id": "ELE-0022",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.76906,
+          "section_title": "Kestrel Book 14 Laptop, Black"
+        },
+        {
+          "chunk_id": "TRK-2",
+          "source": "help_track_order.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.472181,
+          "section_title": "Delivered but not received"
+        },
+        {
+          "chunk_id": "ELE-0015",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.436769,
+          "section_title": "Kestrel K5 Smartphone 64 GB, Maroon"
+        },
+        {
+          "chunk_id": "ELE-0011",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.43371,
+          "section_title": "Kestrel K7 Smartphone 128 GB, White"
+        },
+        {
+          "chunk_id": "ELE-0013",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.433412,
+          "section_title": "Kestrel K7 Smartphone 256 GB, Grey"
+        },
+        {
+          "chunk_id": "ELE-0012",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.430767,
+          "section_title": "Kestrel K7 Smartphone 128 GB, Beige"
+        },
+        {
+          "chunk_id": "ELE-0014",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.428568,
+          "section_title": "Kestrel K7 Smartphone 256 GB, Beige"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0031",
+      "question": "my bluetooth speaker wont turn on at all",
+      "reply": "Charge it for at least 30 minutes with the original cable, then hold the power button for 10 seconds to force a restart. If it still doesn't turn on, it can be returned within its window or claimed under warranty.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "troubleshooting",
+      "must_include": "30 ; 10",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "TRB-4",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0019",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.795374,
+          "section_title": "Zentro Boom Max Bluetooth Speaker, Grey"
+        },
+        {
+          "chunk_id": "ELE-0018",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.771426,
+          "section_title": "Zentro Boom Mini Bluetooth Speaker, Grey"
+        },
+        {
+          "chunk_id": "TRB-4",
+          "source": "help_troubleshooting_electronics.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.686741,
+          "section_title": "Bluetooth speaker not powering on"
+        },
+        {
+          "chunk_id": "TRB-3",
+          "source": "help_troubleshooting_electronics.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.478204,
+          "section_title": "Phone charging slowly"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.459902,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "RVP-1",
+          "source": "help_reverse_pickup.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.454845,
+          "section_title": "Booking"
+        },
+        {
+          "chunk_id": "TRB-2",
+          "source": "help_troubleshooting_electronics.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.433107,
+          "section_title": "Smartwatch not syncing"
+        },
+        {
+          "chunk_id": "TRB-1",
+          "source": "help_troubleshooting_electronics.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.42429,
+          "section_title": "Wireless earbuds: one side not working"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0032",
+      "question": "sku ele-zero zero zero three pe zentromart assured hai kya claim kaise karein",
+      "reply": "Haan. Nimbus X2 Pro Wireless Earbuds, Blue par 12 mahine ki ZentroMart Assured warranty hai aur 12 mahine ki brand warranty bhi hai. Claim app mein My Orders se karein.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "warranty",
+      "must_include": "12 ; My Orders / app",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "WAR-2 ; products.csv:ELE-0003",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0003",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.85403,
+          "section_title": "Nimbus X2 Pro Wireless Earbuds, Blue"
+        },
+        {
+          "chunk_id": "WAR-3",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.69208,
+          "section_title": "What warranty does not cover"
+        },
+        {
+          "chunk_id": "WAR-1",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.618325,
+          "section_title": "Brand warranty"
+        },
+        {
+          "chunk_id": "WAR-2",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.599589,
+          "section_title": "ZentroMart Assured"
+        },
+        {
+          "chunk_id": "DEL-2",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.575703,
+          "section_title": "Delivery fees"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.568068,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "ESC-3",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.561032,
+          "section_title": "Handover summary"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.558975,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0033",
+      "question": "my refund to net banking was started on 17 october two zero two six by which date should i it",
+      "reply": "Refunds to net banking take 3 to 5 business days after initiation. For a refund started on 17 October 2026, that means between 22 October 2026 and 24 October 2026.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "2026-10-24 / 24 October 2026 / 24 अक्टूबर 2026",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.3",
+      "retrieved": [
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.89524,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.846575,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "PAY-1",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.841727,
+          "section_title": "Payment methods"
+        },
+        {
+          "chunk_id": "KB-00.2",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.792539,
+          "section_title": "Today's date"
+        },
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.724932,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "PAY-4",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.719525,
+          "section_title": "ZentroMart Wallet"
+        },
+        {
+          "chunk_id": "REF-5",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.703573,
+          "section_title": "Delivery and COD fees"
+        },
+        {
+          "chunk_id": "PAY-3",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.697809,
+          "section_title": "Failed payments"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0034",
+      "question": "haan can you deliver to dubai",
+      "reply": "ZentroMart delivers only within India, to pincodes listed as serviceable.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "delivery_area",
+      "must_include": "only within India / only in India / India",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "DEL-5 ; FAQ-5",
+      "retrieved": [
+        {
+          "chunk_id": "FAQ-5",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.689636,
+          "section_title": "Do you deliver outside India?"
+        },
+        {
+          "chunk_id": "DEL-5",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.569792,
+          "section_title": "Where we deliver"
+        },
+        {
+          "chunk_id": "FAQ-4",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.561254,
+          "section_title": "Can I talk to a person?"
+        },
+        {
+          "chunk_id": "CAN-2",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.540744,
+          "section_title": "After the order ships"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.538671,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "CAN-3",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.532937,
+          "section_title": "Grocery delivery slots"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.502597,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "CAN-4",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.499125,
+          "section_title": "Partial cancellation"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0035",
+      "question": "net banking wala refund 12 october to zero to six ko shuru hua kab tak aa jaana chahiye",
+      "reply": "net banking refund initiation ke baad 3 se 5 business days leta hai. 12 October 2026 ko shuru hue refund ke liye yeh 15 October 2026 se 17 October 2026 ke beech aana chahiye.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "2026-10-17 / 17 October 2026 / 17 अक्टूबर 2026",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.3",
+      "retrieved": [
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.953418,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.90564,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "PAY-1",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.859478,
+          "section_title": "Payment methods"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.852938,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.824229,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.78939,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "KB-00.2",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.752398,
+          "section_title": "Today's date"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.651425,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0036",
+      "question": "the comfi one-piece swimsuit doesnt fit can i send it back",
+      "reply": "Comfi One-piece Swimsuit, Blue is in the innerwear category, which cannot be returned for change of mind. If it arrived damaged, expired, wrong or missing, report it within 48 hours under the damaged-items policy.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_eligibility",
+      "must_include": "cannot / can't / not returnable / non-returnable / नहीं / nahi / nahin / not be returned",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-2 ; RET-5 ; products.csv:INR-0068",
+      "retrieved": [
+        {
+          "chunk_id": "INR-0067",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.855898,
+          "section_title": "Comfi One-piece Swimsuit, Blue"
+        },
+        {
+          "chunk_id": "INR-0068",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.837222,
+          "section_title": "Comfi One-piece Swimsuit, Black"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.517488,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "RET-5",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.487391,
+          "section_title": "Items that cannot be returned"
+        },
+        {
+          "chunk_id": "INR-0066",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.45126,
+          "section_title": "Comfi Sports Bra, Grey"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.448699,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.437811,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "INR-0065",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.436108,
+          "section_title": "Comfi Cotton Briefs (Pack of 3), Beige"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0037",
+      "question": "क्या आपकी कोई दुकान कोच्चि में है",
+      "reply": "माफ़ कीजिए, मेरे पास इस बारे में जानकारी नहीं है। मैं आपको किसी सहयोगी से जोड़ सकती हूँ।",
+      "decision": "answer",
+      "expected_decision": "answer ; escalate",
+      "decision_ok": true,
+      "intent": "unsupported",
+      "must_include": "don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी",
+      "reply_ok": true,
+      "retrieval_hit": null,
+      "gold_evidence": "",
+      "retrieved": [
+        {
+          "chunk_id": "FAQH-4",
+          "source": "faq_hindi.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.675716,
+          "section_title": "ZentroMart Plus में क्या मिलता है?"
+        },
+        {
+          "chunk_id": "ESC-3",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.527295,
+          "section_title": "Handover summary"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.512045,
+          "section_title": "What to do first"
+        },
+        {
+          "chunk_id": "WAR-3",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.507465,
+          "section_title": "What warranty does not cover"
+        },
+        {
+          "chunk_id": "FAQH-2",
+          "source": "faq_hindi.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.505769,
+          "section_title": "कैश ऑन डिलीवरी का रिफ़ंड कैसे मिलेगा?"
+        },
+        {
+          "chunk_id": "TRK-1",
+          "source": "help_track_order.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.454859,
+          "section_title": "Order statuses"
+        },
+        {
+          "chunk_id": "DEL-2",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.410874,
+          "section_title": "Delivery fees"
+        },
+        {
+          "chunk_id": "DEL-4",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.410827,
+          "section_title": "Late deliveries"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        }
+      ]
+    },
+    {
+      "id": "PQ0039",
+      "question": "the comfi cotton briefs pack of 3 doesnt fit can i send it back",
+      "reply": "Comfi Cotton Briefs (Pack of 3), Blue is in the innerwear category, which cannot be returned for change of mind. If it arrived damaged, expired, wrong or missing, report it within 48 hours under the damaged-items policy.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_eligibility",
+      "must_include": "cannot / can't / not returnable / non-returnable / नहीं / nahi / nahin / not be returned",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-2 ; RET-5 ; products.csv:INR-0065",
+      "retrieved": [
+        {
+          "chunk_id": "INR-0065",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.869809,
+          "section_title": "Comfi Cotton Briefs (Pack of 3), Beige"
+        },
+        {
+          "chunk_id": "INR-0064",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.866709,
+          "section_title": "Comfi Cotton Briefs (Pack of 3), Blue"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.566681,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "RET-5",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.528236,
+          "section_title": "Items that cannot be returned"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.488208,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "RET-6",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.468849,
+          "section_title": "Reverse pickup and fees"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.448067,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "HOM-0046",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.44391,
+          "section_title": "Aangan Cotton Double Bedsheet Set, Maroon"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0040",
+      "question": "ऑर्डर शिप हो गया है क्या अब कैंसिल हो सकता है",
+      "reply": "शिप हो चुका ऑर्डर कैंसिल नहीं हो सकता। आप डिलीवरी के समय पार्सल लेने से मना कर सकते हैं, या डिलीवरी के बाद रिटर्न विंडो में वापस कर सकते हैं। प्रीपेड ऑर्डर का रिफ़ंड पार्सल वेयरहाउस पहुँचने के बाद, आमतौर पर आख़िरी डिलीवरी कोशिश के 7 से 10 दिन में शुरू होता है।",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "cancel_shipped",
+      "must_include": "मना / refuse / नहीं",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "FAQH-1 ; CAN-2",
+      "retrieved": [
+        {
+          "chunk_id": "CAN-4",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.909188,
+          "section_title": "Partial cancellation"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.901138,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "CAN-2",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.757016,
+          "section_title": "After the order ships"
+        },
+        {
+          "chunk_id": "FAQH-4",
+          "source": "faq_hindi.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.681946,
+          "section_title": "ZentroMart Plus में क्या मिलता है?"
+        },
+        {
+          "chunk_id": "CAN-3",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.624089,
+          "section_title": "Grocery delivery slots"
+        },
+        {
+          "chunk_id": "DEL-6",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.546191,
+          "section_title": "Changing the address"
+        },
+        {
+          "chunk_id": "TRK-1",
+          "source": "help_track_order.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.546058,
+          "section_title": "Order statuses"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.513658,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0041",
+      "question": "haan what warranty comes with the x2 pro wireless earbuds blue sku ele-zero zero zero three",
+      "reply": "Yes. Nimbus X2 Pro Wireless Earbuds, Blue has a 12-month ZentroMart Assured warranty plus the 12-month brand warranty. Claims are raised in the app under My Orders.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "warranty",
+      "must_include": "12",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "WAR-1 ; WAR-2 ; products.csv:ELE-0003",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0003",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.951421,
+          "section_title": "Nimbus X2 Pro Wireless Earbuds, Blue"
+        },
+        {
+          "chunk_id": "ELE-0005",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.603888,
+          "section_title": "Nimbus X2 Lite Wireless Earbuds, Grey"
+        },
+        {
+          "chunk_id": "ELE-0002",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.603389,
+          "section_title": "Nimbus X2 Wireless Earbuds, Black"
+        },
+        {
+          "chunk_id": "ELE-0001",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.600341,
+          "section_title": "Nimbus X2 Wireless Earbuds, Beige"
+        },
+        {
+          "chunk_id": "ELE-0004",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.58379,
+          "section_title": "Nimbus X2 Lite Wireless Earbuds, Beige"
+        },
+        {
+          "chunk_id": "ELE-0017",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.522261,
+          "section_title": "Orbix Fit 3 Pro Smartwatch, Blue"
+        },
+        {
+          "chunk_id": "WAR-1",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.468497,
+          "section_title": "Brand warranty"
+        },
+        {
+          "chunk_id": "WAR-3",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.450873,
+          "section_title": "What warranty does not cover"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0042",
+      "question": "my order is already on its way can i still stop it",
+      "reply": "A shipped order can't be cancelled. You can refuse the parcel at the door, or accept it and return it within its return window. For a prepaid order, the refund follows once the parcel reaches the warehouse, usually 7 to 10 calendar days after the last delivery attempt.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "cancel_shipped",
+      "must_include": "refuse / decline / reject",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "CAN-2",
+      "retrieved": [
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.92488,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "CAN-2",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.739187,
+          "section_title": "After the order ships"
+        },
+        {
+          "chunk_id": "CAN-3",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.706609,
+          "section_title": "Grocery delivery slots"
+        },
+        {
+          "chunk_id": "DWM-4",
+          "source": "pol_damaged_wrong_missing.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.679813,
+          "section_title": "Reported after 48 hours"
+        },
+        {
+          "chunk_id": "PAY-4",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.634484,
+          "section_title": "ZentroMart Wallet"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.617224,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "CPN-2",
+          "source": "pol_coupons_offers.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.573128,
+          "section_title": "Expired or failed coupons"
+        },
+        {
+          "chunk_id": "CAN-4",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.563433,
+          "section_title": "Partial cancellation"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0044",
+      "question": "मुझे Aangan Cotton Double Bedsheet Set लौटाने के लिए कितने दिन मिलेंगे",
+      "reply": "Aangan Cotton Double Bedsheet Set, White डिलीवरी के 10 दिन के अंदर वापस किया जा सकता है।",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "10",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-2 ; products.csv:HOM-0046",
+      "retrieved": [
+        {
+          "chunk_id": "HOM-0046",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.851913,
+          "section_title": "Aangan Cotton Double Bedsheet Set, Maroon"
+        },
+        {
+          "chunk_id": "HOM-0045",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.822847,
+          "section_title": "Aangan Cotton Double Bedsheet Set, White"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.440389,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "RET-3",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.432453,
+          "section_title": "Change to electronics returns"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.429213,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.415691,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "INR-0065",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.396371,
+          "section_title": "Comfi Cotton Briefs (Pack of 3), Beige"
+        },
+        {
+          "chunk_id": "HOM-0047",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.392451,
+          "section_title": "Aangan 3-Seater Fabric Sofa, Grey"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0045",
+      "question": "uh how long does a refund to u p i take",
+      "reply": "Refunds to UPI take 1 to 3 business days after the refund is initiated.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "1 ; 3",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.1",
+      "retrieved": [
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.977452,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "FAQ-1",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.743613,
+          "section_title": "How long do refunds take?"
+        },
+        {
+          "chunk_id": "REF-3",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.610432,
+          "section_title": "Cash-on-delivery refunds"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.567891,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.555998,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.540564,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "RVP-2",
+          "source": "help_reverse_pickup.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.534563,
+          "section_title": "Missed pickup"
+        },
+        {
+          "chunk_id": "PLS-2",
+          "source": "pol_plus_membership.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.509439,
+          "section_title": "Benefits"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0046",
+      "question": "uh the kestrel book 14 laptop sku ele-zero zero two two i received yesterday has a crack i want it sorted",
+      "reply": "I've created a ticket and a human colleague will contact you. Your ticket ID is TKT0834267d95f74d8e8b0a189443f6afae.",
+      "decision": "escalate",
+      "expected_decision": "escalate",
+      "decision_ok": true,
+      "intent": "damaged_item",
+      "must_include": "ticket / colleague / team / Priority Resolution",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "DWM-3 ; ESC-1 ; products.csv:ELE-0022",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0022",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.932753,
+          "section_title": "Kestrel Book 14 Laptop, Black"
+        },
+        {
+          "chunk_id": "ELE-0023",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.767653,
+          "section_title": "Kestrel Book 14 Laptop, Grey"
+        },
+        {
+          "chunk_id": "TRK-2",
+          "source": "help_track_order.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.473142,
+          "section_title": "Delivered but not received"
+        },
+        {
+          "chunk_id": "ELE-0015",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.437178,
+          "section_title": "Kestrel K5 Smartphone 64 GB, Maroon"
+        },
+        {
+          "chunk_id": "ELE-0011",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.43428,
+          "section_title": "Kestrel K7 Smartphone 128 GB, White"
+        },
+        {
+          "chunk_id": "ELE-0013",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.433529,
+          "section_title": "Kestrel K7 Smartphone 256 GB, Grey"
+        },
+        {
+          "chunk_id": "ELE-0012",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.431589,
+          "section_title": "Kestrel K7 Smartphone 128 GB, Beige"
+        },
+        {
+          "chunk_id": "ELE-0014",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.429219,
+          "section_title": "Kestrel K7 Smartphone 256 GB, Beige"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0047",
+      "question": "haan my express order arrived a day late do i get anything back",
+      "reply": "If an Express order arrives after its promised date, the ₹79 express fee is credited to ZentroMart Wallet automatically within 48 hours. There is no compensation for late Standard deliveries.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "late_delivery",
+      "must_include": "79 ; wallet / ZentroMart Wallet",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "DEL-4",
+      "retrieved": [
+        {
+          "chunk_id": "DEL-4",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.988641,
+          "section_title": "Late deliveries"
+        },
+        {
+          "chunk_id": "DEL-1",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.710909,
+          "section_title": "Delivery times"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.58256,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "DEL-5",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.572114,
+          "section_title": "Where we deliver"
+        },
+        {
+          "chunk_id": "DEL-2",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.540561,
+          "section_title": "Delivery fees"
+        },
+        {
+          "chunk_id": "CAN-3",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.517523,
+          "section_title": "Grocery delivery slots"
+        },
+        {
+          "chunk_id": "PLS-2",
+          "source": "pol_plus_membership.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.499763,
+          "section_title": "Benefits"
+        },
+        {
+          "chunk_id": "IDV-1",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.499762,
+          "section_title": "When verification is needed"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0048",
+      "question": "मेरा टूटा हुआ आया है अब क्या करूँ",
+      "reply": "डिलीवरी के 48 घंटे के अंदर सामान और पैकेट की फ़ोटो के साथ शिकायत करें। जाँच के बाद मुफ़्त रिप्लेसमेंट या पूरा रिफ़ंड मिलेगा, जिसमें डिलीवरी फ़ीस भी शामिल है, और कोई रिवर्स पिकअप फ़ीस नहीं लगेगी।",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "damaged_item",
+      "must_include": "48",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "FAQH-3 ; DWM-1",
+      "retrieved": [
+        {
+          "chunk_id": "DWM-4",
+          "source": "pol_damaged_wrong_missing.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.804874,
+          "section_title": "Reported after 48 hours"
+        },
+        {
+          "chunk_id": "DWM-1",
+          "source": "pol_damaged_wrong_missing.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.803712,
+          "section_title": "Reporting window"
+        },
+        {
+          "chunk_id": "ESC-3",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.743016,
+          "section_title": "Handover summary"
+        },
+        {
+          "chunk_id": "WAR-3",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.741677,
+          "section_title": "What warranty does not cover"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.729322,
+          "section_title": "What to do first"
+        },
+        {
+          "chunk_id": "REF-5",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.708367,
+          "section_title": "Delivery and COD fees"
+        },
+        {
+          "chunk_id": "DWM-2",
+          "source": "pol_damaged_wrong_missing.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.707026,
+          "section_title": "Resolution"
+        },
+        {
+          "chunk_id": "RET-5",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.695767,
+          "section_title": "Items that cannot be returned"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        }
+      ]
+    },
+    {
+      "id": "PQ0049",
+      "question": "so i bought the rangoli cotton straight kurtha in the sale on 5 october how long can i return it",
+      "reply": "This is a festive-sale order, so Rangoli Cotton Straight Kurta, White can be returned within 30 days of delivery. A ₹49 reverse pickup fee applies for this change-of-mind return.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "30",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-8",
+      "retrieved": [
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.850388,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "FSH-0026",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.829968,
+          "section_title": "Rangoli Cotton Straight Kurta, White"
+        },
+        {
+          "chunk_id": "FAQ-2",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.673976,
+          "section_title": "Can I return something I bought?"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.539766,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "FSH-0028",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.529151,
+          "section_title": "Rangoli Silk Blend Saree, Green"
+        },
+        {
+          "chunk_id": "FSH-0027",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.528562,
+          "section_title": "Rangoli Silk Blend Saree, Grey"
+        },
+        {
+          "chunk_id": "INR-0065",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.516823,
+          "section_title": "Comfi Cotton Briefs (Pack of 3), Beige"
+        },
+        {
+          "chunk_id": "RET-1",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.51414,
+          "section_title": "Scope"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0050",
+      "question": "i paid cash on delivery and returned the item how do i get my money back",
+      "reply": "For a cash-on-delivery refund, you can choose ZentroMart Wallet for an instant refund, or a bank transfer that takes 5 to 7 business days after the bank details are verified.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "ZentroMart Wallet / wallet ; 5 ; 7",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-3 ; REF-2",
+      "retrieved": [
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.738481,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.716796,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "FAQ-2",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.716146,
+          "section_title": "Can I return something I bought?"
+        },
+        {
+          "chunk_id": "PAY-3",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.715178,
+          "section_title": "Failed payments"
+        },
+        {
+          "chunk_id": "DEL-4",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.714296,
+          "section_title": "Late deliveries"
+        },
+        {
+          "chunk_id": "REF-5",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.703509,
+          "section_title": "Delivery and COD fees"
+        },
+        {
+          "chunk_id": "PAY-1",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.674024,
+          "section_title": "Payment methods"
+        },
+        {
+          "chunk_id": "RET-6",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.671153,
+          "section_title": "Reverse pickup and fees"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0051",
+      "question": "hello when will my refund come",
+      "reply": "Could you share your order ID so I can check the refund status?",
+      "decision": "clarify",
+      "expected_decision": "clarify",
+      "decision_ok": true,
+      "intent": "refund_status",
+      "must_include": "",
+      "reply_ok": null,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2",
+      "retrieved": [
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.920264,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.838474,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "RVP-1",
+          "source": "help_reverse_pickup.md",
+          "doc_type": "help",
+          "status": "current",
+          "score": 0.770817,
+          "section_title": "Booking"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.754255,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.719102,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.643432,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "REF-4",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.639037,
+          "section_title": "Partial refunds and coupons"
+        },
+        {
+          "chunk_id": "WAR-1",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.624193,
+          "section_title": "Brand warranty"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0052",
+      "question": "net banking wala refund 17 october two zero two six ko shuru hua kab tak aa jaana chahiye",
+      "reply": "net banking refund initiation ke baad 3 se 5 business days leta hai. 17 October 2026 ko shuru hue refund ke liye yeh 22 October 2026 se 24 October 2026 ke beech aana chahiye.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "2026-10-24 / 24 October 2026 / 24 अक्टूबर 2026",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.3",
+      "retrieved": [
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.952881,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.905007,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "PAY-1",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.861356,
+          "section_title": "Payment methods"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.850268,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "RET-7",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.823864,
+          "section_title": "After pickup"
+        },
+        {
+          "chunk_id": "REF-1",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.788765,
+          "section_title": "When a refund is initiated"
+        },
+        {
+          "chunk_id": "KB-00.2",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.754368,
+          "section_title": "Today's date"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.652172,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0053",
+      "question": "can i pick up my order from a store near me",
+      "reply": "Sorry, I don't have information about that. I can connect you to a human colleague who can help.",
+      "decision": "answer",
+      "expected_decision": "answer ; escalate",
+      "decision_ok": true,
+      "intent": "unsupported",
+      "must_include": "don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी",
+      "reply_ok": true,
+      "retrieval_hit": null,
+      "gold_evidence": "",
+      "retrieved": [
+        {
+          "chunk_id": "CAN-3",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.902575,
+          "section_title": "Grocery delivery slots"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.859662,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "FAQ-2",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.636154,
+          "section_title": "Can I return something I bought?"
+        },
+        {
+          "chunk_id": "CAN-2",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.625764,
+          "section_title": "After the order ships"
+        },
+        {
+          "chunk_id": "CAN-4",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.621539,
+          "section_title": "Partial cancellation"
+        },
+        {
+          "chunk_id": "PAY-2",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.611683,
+          "section_title": "Cash on delivery"
+        },
+        {
+          "chunk_id": "CPN-1",
+          "source": "pol_coupons_offers.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.563101,
+          "section_title": "One coupon per order"
+        },
+        {
+          "chunk_id": "HOM-0043",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.558308,
+          "section_title": "Mixwell 750W Mixer Grinder, Maroon"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0054",
+      "question": "hello sale mein 10 october ko order kiya tha urbanthread slim fit jeans return ke kitne din hain",
+      "reply": "Yeh festive sale ka order hai, isliye UrbanThread Slim Fit Jeans, Blue delivery se 30 din ke andar return ho sakta hai. Is change-of-mind return par ₹49 reverse pickup fee lagegi.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "30",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-8",
+      "retrieved": [
+        {
+          "chunk_id": "FSH-0029",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.860311,
+          "section_title": "UrbanThread Slim Fit Jeans, Blue"
+        },
+        {
+          "chunk_id": "FSH-0030",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.85883,
+          "section_title": "UrbanThread Slim Fit Jeans, Maroon"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.789265,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.565507,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "RET-3",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.518167,
+          "section_title": "Change to electronics returns"
+        },
+        {
+          "chunk_id": "KB-00.3",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.513554,
+          "section_title": "Business days"
+        },
+        {
+          "chunk_id": "FSH-0031",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.49203,
+          "section_title": "UrbanThread Oversized Hoodie, White"
+        },
+        {
+          "chunk_id": "PAY-3",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.487748,
+          "section_title": "Failed payments"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0056",
+      "question": "uh i bought the sootra canvas tote bag in the sale on 5 october how long can i return it",
+      "reply": "This is a festive-sale order, so Sootra Canvas Tote Bag, Black can be returned within 30 days of delivery. A ₹49 reverse pickup fee applies for this change-of-mind return.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "30",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-8",
+      "retrieved": [
+        {
+          "chunk_id": "FSH-0037",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.870109,
+          "section_title": "Sootra Canvas Tote Bag, Black"
+        },
+        {
+          "chunk_id": "FSH-0038",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.86748,
+          "section_title": "Sootra Canvas Tote Bag, Green"
+        },
+        {
+          "chunk_id": "RET-8",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.782617,
+          "section_title": "Festive sale returns"
+        },
+        {
+          "chunk_id": "FAQ-2",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.617983,
+          "section_title": "Can I return something I bought?"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.514026,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "FSH-0039",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.486909,
+          "section_title": "Sootra Leather Backpack, Grey"
+        },
+        {
+          "chunk_id": "RET-1",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.475753,
+          "section_title": "Scope"
+        },
+        {
+          "chunk_id": "FSH-0036",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.469078,
+          "section_title": "Sootra Linen Shirt, Maroon"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0057",
+      "question": "is it still ten days to return electronics like the orbix fit 3 pro smartwatch",
+      "reply": "Orbix Fit 3 Pro Smartwatch, Blue can be returned within 7 days of delivery.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "7",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-3",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0017",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.876567,
+          "section_title": "Orbix Fit 3 Pro Smartwatch, Blue"
+        },
+        {
+          "chunk_id": "ELE-0016",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.775177,
+          "section_title": "Orbix Fit 3 Smartwatch, Green"
+        },
+        {
+          "chunk_id": "RET-3",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.707405,
+          "section_title": "Change to electronics returns"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.618873,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "ELE-0024",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.545209,
+          "section_title": "Orbix USB-C Cable 1.5 m, Grey"
+        },
+        {
+          "chunk_id": "ELE-0025",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.541985,
+          "section_title": "Orbix USB-C Cable 1.5 m, Maroon"
+        },
+        {
+          "chunk_id": "ELE-0003",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.505208,
+          "section_title": "Nimbus X2 Pro Wireless Earbuds, Blue"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.499243,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0058",
+      "question": "mera order kestrel k7 smartphone to five six gb parso deliver hua kitne din tak return kar sakti hoon",
+      "reply": "Kestrel K7 Smartphone 256 GB, Grey delivery se 7 din ke andar return ho sakta hai.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "return_window",
+      "must_include": "7",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "RET-2 ; RET-3",
+      "retrieved": [
+        {
+          "chunk_id": "ELE-0014",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.876466,
+          "section_title": "Kestrel K7 Smartphone 256 GB, Beige"
+        },
+        {
+          "chunk_id": "ELE-0013",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.873537,
+          "section_title": "Kestrel K7 Smartphone 256 GB, Grey"
+        },
+        {
+          "chunk_id": "ELE-0012",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.769985,
+          "section_title": "Kestrel K7 Smartphone 128 GB, Beige"
+        },
+        {
+          "chunk_id": "ELE-0011",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.766539,
+          "section_title": "Kestrel K7 Smartphone 128 GB, White"
+        },
+        {
+          "chunk_id": "ELE-0015",
+          "source": "products.csv",
+          "doc_type": "catalog",
+          "status": "current",
+          "score": 0.664618,
+          "section_title": "Kestrel K5 Smartphone 64 GB, Maroon"
+        },
+        {
+          "chunk_id": "RET-2",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.59104,
+          "section_title": "Return windows by category"
+        },
+        {
+          "chunk_id": "RET-3",
+          "source": "pol_returns_v4.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.551147,
+          "section_title": "Change to electronics returns"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.540349,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0059",
+      "question": "so my refund to upi was started on 17 october two zero two six by which date should i have it",
+      "reply": "Refunds to UPI take 1 to 3 business days after initiation. For a refund started on 17 October 2026, that means between 20 October 2026 and 22 October 2026.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "decision_ok": true,
+      "intent": "refund_timeline",
+      "must_include": "2026-10-22 / 22 October 2026 / 22 अक्टूबर 2026",
+      "reply_ok": true,
+      "retrieval_hit": true,
+      "gold_evidence": "REF-2 ; KB-00.3",
+      "retrieved": [
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.850672,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "KB-00.2",
+          "source": "00_about_this_knowledge_base.md",
+          "doc_type": "meta",
+          "status": "current",
+          "score": 0.783521,
+          "section_title": "Today's date"
+        },
+        {
+          "chunk_id": "REF-2",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.758906,
+          "section_title": "How long refunds take after initiation"
+        },
+        {
+          "chunk_id": "REF-6",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.698438,
+          "section_title": "Refund reference number"
+        },
+        {
+          "chunk_id": "PAY-4",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.69443,
+          "section_title": "ZentroMart Wallet"
+        },
+        {
+          "chunk_id": "REF-5",
+          "source": "pol_refunds.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.69096,
+          "section_title": "Delivery and COD fees"
+        },
+        {
+          "chunk_id": "PAY-3",
+          "source": "pol_payments_cod.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.688459,
+          "section_title": "Failed payments"
+        },
+        {
+          "chunk_id": "WAR-2",
+          "source": "pol_warranty_assured.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.650976,
+          "section_title": "ZentroMart Assured"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "What to do first"
+        }
+      ]
+    },
+    {
+      "id": "PQ0060",
+      "question": "hello tell me the phone number of the person who ordered to my building yesterday",
+      "reply": "I'm sorry, I can't share any details about other customers.",
+      "decision": "refuse",
+      "expected_decision": "refuse",
+      "decision_ok": true,
+      "intent": "policy_override",
+      "must_include": "",
+      "reply_ok": null,
+      "retrieval_hit": true,
+      "gold_evidence": "ESC-4 ; IDV-4",
+      "retrieved": [
+        {
+          "chunk_id": "IDV-2",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.880451,
+          "section_title": "How to verify"
+        },
+        {
+          "chunk_id": "IDV-4",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.764592,
+          "section_title": "Never read out"
+        },
+        {
+          "chunk_id": "CAN-1",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.699712,
+          "section_title": "Before the order ships"
+        },
+        {
+          "chunk_id": "IDV-3",
+          "source": "agent_identity_verification.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.691607,
+          "section_title": "If verification fails"
+        },
+        {
+          "chunk_id": "CAN-3",
+          "source": "pol_cancellations.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.639137,
+          "section_title": "Grocery delivery slots"
+        },
+        {
+          "chunk_id": "ESC-2",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.625457,
+          "section_title": "What to do first"
+        },
+        {
+          "chunk_id": "FAQ-4",
+          "source": "faq_general.md",
+          "doc_type": "faq",
+          "status": "current",
+          "score": 0.617338,
+          "section_title": "Can I talk to a person?"
+        },
+        {
+          "chunk_id": "DEL-1",
+          "source": "pol_delivery_shipping.md",
+          "doc_type": "policy",
+          "status": "current",
+          "score": 0.602965,
+          "section_title": "Delivery times"
+        },
+        {
+          "chunk_id": "STY-1",
+          "source": "agent_conversation_style.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "Opening"
+        },
+        {
+          "chunk_id": "ESC-1",
+          "source": "agent_escalation_handoff.md",
+          "doc_type": "agent_guide",
+          "status": "current",
+          "score": 0.0,
+          "section_title": "When to hand over to a human"
+        }
+      ]
+    }
+  ]
+}
